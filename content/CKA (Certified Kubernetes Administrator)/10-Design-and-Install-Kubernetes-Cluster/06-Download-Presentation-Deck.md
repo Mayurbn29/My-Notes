@@ -1,3 +1,3 @@
 # Download Presentation Deck
 
- - [Download](https://kodekloud.com/topic/download-presentation-deck-9/)
+ - Take me to the [Presentation Deck](https://kodekloud.com/topic/attachments/)
