@@ -72,7 +72,10 @@ In this section we will take a look at Resource Limits
 - what happens when a pod tries to exceed resources beyond its limits?
 
    ![el](el.PNG)
-   
+
+## Ideal Scenario:
+
+![[ideal-resource-limit.png]]
   
 #### K8s Reference Docs:
 - https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
