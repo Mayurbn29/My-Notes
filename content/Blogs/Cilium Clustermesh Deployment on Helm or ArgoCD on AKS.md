@@ -62,7 +62,6 @@ Reference: https://docs.kubermatic.com/kubermatic/v2.25/tutorials-howtos/network
 2. <u>Retrieve Cluster Mesh data from Cluster 1</u>:      
     **In Cluster 1**, retrieve the information necessary for the next steps:
 
-    The secret to get the cert and key is the **cilium-ca** secret in the kube-system namespace.<br>
 
     - Retrieve CA cert & key:
 
