@@ -23,11 +23,10 @@ Reference: https://docs.kubermatic.com/kubermatic/v2.25/tutorials-howtos/network
 - The network between clusters must allow the inter-cluster communication. The exact ports are documented in the [Firewall Rules](https://docs.cilium.io/en/stable/operations/system_requirements/#firewall-requirements) section.
 ##### <u>Steps to create clustermesh on Helm or ArgoCD</u>:    
 
-1. <u>Deploy Cilium and Clustermesh with the secondary cluster as its config using these values</u>:
+1. <u>Deploy Cilium and Clustermesh on the First Cluster using these values</u>:
 
-
-	```yaml
-	aksbyocni:
+   ```yaml	
+    aksbyocni:
 	  enabled: true
 	nodeinit:
 	  enabled: true
@@ -38,13 +37,6 @@ Reference: https://docs.kubermatic.com/kubermatic/v2.25/tutorials-howtos/network
 	  operator:
 	    clusterPoolIPv4PodCIDRList: ["10.10.0.0/16"]
 	clustermesh:
-	  config:
-	  enabled: true
-	    clusters:
-		  - name: secondary-cluster
-		    port: 2379
-		    ips:
-		    - 192.168.20.5
 	  useAPIServer: true
 	  apiserver:
 		service:
@@ -56,8 +48,9 @@ Reference: https://docs.kubermatic.com/kubermatic/v2.25/tutorials-howtos/network
 		    enabled: true
 		    method: cronJob
 		    schedule: 0 0 1 */4 *
-	```
-<br>
+    ```
+
+
 
 2. <u>Retrieve Cluster Mesh data from Cluster 1</u>:      
     **In Cluster 1**, retrieve the information necessary for the next steps:
@@ -67,19 +60,19 @@ Reference: https://docs.kubermatic.com/kubermatic/v2.25/tutorials-howtos/network
 
       ```
       kubectl get secret cilium-ca -n kube-system -o yaml
-      ```
+		```
+	
 
     - Retrieve clustermesh-apiserver external IP:
 
-      ```
-      kubectl get svc clustermesh-apiserver -n kube-system
-      ```   
+	    ```
+      kubectl get secret cilium-ca -n kube-system -o yaml
+        ```
 <br>
 
 3. <u>Get the base64 encoded CA cert and key and the clustermesh-apiserver ip address from the first cluster and add it to the helm values in the second cluster</u>:
 
-
-	```yaml
+   ```yaml
 	aksbyocni:
 	  enabled: true
 	nodeinit:
@@ -96,12 +89,12 @@ Reference: https://docs.kubermatic.com/kubermatic/v2.25/tutorials-howtos/network
 	    key: "<key>"
 	clustermesh:
 	  config:
-	  enabled: true
+	    enabled: true
 	    clusters:
-		  - name: primary-aks-cluster
-		    port: 2379
-		    ips:
-		    - 192.168.10.5
+		- name: primary-aks-cluster
+		  port: 2379
+		  ips:
+		  - 192.168.10.5
 	  useAPIServer: true
 	  apiserver:
 		service:
@@ -115,23 +108,77 @@ Reference: https://docs.kubermatic.com/kubermatic/v2.25/tutorials-howtos/network
 		    schedule: 0 0 1 */4 *
 	operator:
 	  replicas: 1
-	```
-<br>
-
-4. <u>Check Cluster Mesh status:</u>    
-
-	At this point, check Cilium health status in each cluster with:
-	
-	```
-	kubectl exec -it cilium-<pod-id> -n kube-system -- cilium-health status
-	```
-	
-	It should show all local and remote cluster’s nodes and not show any errors. It may take a few minutes until things settle down since the last configuration.
+    ```
 
 <br>
+
+4. <u>Repeat Step 2 for Cluster 2, Retrieve Cluster Mesh data from Cluster 2</u>:    
+
+    **In Cluster 2**, retrieve the information necessary for the next steps:
+
+    - Retrieve CA cert & key:
+
+      ```
+      kubectl get secret cilium-ca -n kube-system -o yaml
+		```
+	
+
+    - Retrieve clustermesh-apiserver external IP:
+
+	    ```
+      kubectl get secret cilium-ca -n kube-system -o yaml
+        ```
+<br>
+
+5. <u>Get the Service IP Address from the second cluster and add it under the config section in the helm values for the first cluster:</u>
+
+
+   ```yaml
+	aksbyocni:
+	  enabled: true
+	nodeinit:
+	  enabled: true
+	cluster:
+	  name: primary-aks-cluster
+	  id: 1
+	ipam:
+	  operator:
+	    clusterPoolIPv4PodCIDRList: ["10.10.0.0/16"]
+	clustermesh:
+	  config:
+	    enabled: true
+	    clusters:
+		- name: secondary-cluster
+		  port: 2379
+		  ips:
+		  - 192.168.20.5
+	  useAPIServer: true
+	  apiserver:
+		service:
+		  type: LoadBalancer
+		  annotations:
+		    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+	    tls:
+		  auto:
+		    enabled: true
+		    method: cronJob
+		    schedule: 0 0 1 */4 *
+	```
+	
+<br>
+
+
+6. <u>Check Cluster Mesh status:</u>    
+
+   At this point, check Cilium health status in each cluster with:
+	  ```
+	  kubectl exec -it cilium-<pod-id> -n kube-system -- cilium-health status
+   ```
+   
+   It should show all local and remote cluster’s nodes and not show any errors. It may take a few minutes until things settle down since the last configuration.
 
 
 > [!note] Note: 
 > It may also help to manually restart:
-> - first ```clustermesh-apiserver``` pods in each cluster,
-> - then ```cilium``` agent pods in each cluster.
+> - first `clustermesh-apiserver` pods in each cluster,
+> - then `cilium` agent pods in each cluster.
