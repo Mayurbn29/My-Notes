@@ -50,7 +50,7 @@ Reference: https://docs.kubermatic.com/kubermatic/v2.25/tutorials-howtos/network
 	        schedule: 0 0 1 */4 *
     ```
 
-
+<br>
 
 2. <u>Retrieve Cluster Mesh data from Cluster 1</u>:      
     **In Cluster 1**, retrieve the information necessary for the next steps:
