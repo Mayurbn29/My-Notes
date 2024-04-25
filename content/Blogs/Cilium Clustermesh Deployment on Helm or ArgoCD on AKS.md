@@ -39,15 +39,15 @@ Reference: https://docs.kubermatic.com/kubermatic/v2.25/tutorials-howtos/network
 	clustermesh:
 	  useAPIServer: true
 	  apiserver:
-		service:
-		  type: LoadBalancer
-		  annotations:
-		    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+	    service:
+	      type: LoadBalancer
+	      annotations:
+	        service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 	    tls:
-		  auto:
-		    enabled: true
-		    method: cronJob
-		    schedule: 0 0 1 */4 *
+	      auto:
+	        enabled: true
+	        method: cronJob
+	        schedule: 0 0 1 */4 *
     ```
 
 
@@ -87,25 +87,25 @@ Reference: https://docs.kubermatic.com/kubermatic/v2.25/tutorials-howtos/network
 	  ca:
 	    cert: "<cert>"
 	    key: "<key>"
-	clustermesh:
+    clustermesh:
 	  config:
 	    enabled: true
 	    clusters:
-		- name: primary-aks-cluster
-		  port: 2379
-		  ips:
-		  - 192.168.10.5
+	    - name: primary-aks-cluster
+	      port: 2379
+	      ips:
+	      - 192.168.10.5
 	  useAPIServer: true
 	  apiserver:
-		service:
-		  type: LoadBalancer
-		  annotations:
-		    service.beta.kubernetes.io/azure-load-balancer-internal: "true"	
+	    service:
+	      type: LoadBalancer
+	      annotations:
+	        service.beta.kubernetes.io/azure-load-balancer-internal: "true"	
 	    tls:
-		  auto:
-		    enabled: true
-		    method: cronJob
-		    schedule: 0 0 1 */4 *
+	      auto:
+	        enabled: true
+	        method: cronJob
+	        schedule: 0 0 1 */4 *
 	operator:
 	  replicas: 1
     ```
@@ -148,21 +148,21 @@ Reference: https://docs.kubermatic.com/kubermatic/v2.25/tutorials-howtos/network
 	  config:
 	    enabled: true
 	    clusters:
-		- name: secondary-cluster
-		  port: 2379
-		  ips:
-		  - 192.168.20.5
+	    - name: secondary-cluster
+	      port: 2379
+	      ips:
+	      - 192.168.20.5
 	  useAPIServer: true
 	  apiserver:
-		service:
-		  type: LoadBalancer
-		  annotations:
-		    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+	    service:
+	      type: LoadBalancer
+	      annotations:
+	        service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 	    tls:
-		  auto:
-		    enabled: true
-		    method: cronJob
-		    schedule: 0 0 1 */4 *
+	      auto:
+	        enabled: true
+	        method: cronJob
+	        schedule: 0 0 1 */4 *
 	```
 	
 <br>
