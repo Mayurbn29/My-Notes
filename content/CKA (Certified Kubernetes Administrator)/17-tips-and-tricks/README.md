@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Tips and Tricks
 
 In this bonus section we will discuss some useful tips that can be used preparation for the exam

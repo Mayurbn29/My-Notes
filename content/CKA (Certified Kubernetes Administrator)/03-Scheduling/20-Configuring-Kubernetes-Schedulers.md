@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Configuring Kubernetes Schedulers
   - Take me to [video Tutorial](https://kodekloud.com/topic/configuring-kubernetes-scheduler/)
   

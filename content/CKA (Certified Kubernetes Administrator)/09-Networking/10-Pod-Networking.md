@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Pod Networking
 
   - Take me to [Lecture](https://kodekloud.com/topic/pod-networking/)

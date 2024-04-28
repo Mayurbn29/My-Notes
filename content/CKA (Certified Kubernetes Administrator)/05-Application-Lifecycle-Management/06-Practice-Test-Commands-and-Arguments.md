@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Practice Test - Commands and Arguments
   - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-commands-and-arguments/)
   

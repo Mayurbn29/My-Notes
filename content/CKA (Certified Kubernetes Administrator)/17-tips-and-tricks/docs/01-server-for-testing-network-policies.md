@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Servers for testing network policies
 
 Sometimes you may have a question that asks you to block ingress to a pod on all but some specific port. If a pod that meets the port requirement is not already present in the given namespace, then the issue here is "How do I create a pod onto which to attach the netpol that listens on the given port so I can test the policy?". You can't just run an nginx pod as that always listens on port 80. You could configure it otherwise, but that would require you to mount a configmap into the nginx pod containing an alternate config for nginx with the new port number. That's far too much hassle under exam conditions!

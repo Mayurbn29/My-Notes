@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Practice Test - Application Failure
 
   - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-application-failure/) of the Application Failure

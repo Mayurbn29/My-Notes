@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Solution Worker Node Failure
 
   - Lets have a look at the [Practice Test](https://kodekloud.com/topic/practice-test-worker-node-failure/) of the Worker Node Failure

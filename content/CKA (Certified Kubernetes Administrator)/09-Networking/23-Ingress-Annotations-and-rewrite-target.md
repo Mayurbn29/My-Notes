@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Ingress Annotations and rewrite-target
 
   - Take me to [Lecture](https://kodekloud.com/topic/ingress-annotations-and-rewrite-target/)

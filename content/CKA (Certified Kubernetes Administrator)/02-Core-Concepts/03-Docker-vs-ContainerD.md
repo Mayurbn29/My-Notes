@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Docker vs. ContainerD
 
 In this section we will look at the differences between Docker and ContainerD

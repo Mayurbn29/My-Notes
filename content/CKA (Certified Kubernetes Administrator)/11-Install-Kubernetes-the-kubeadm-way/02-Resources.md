@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Resources
 
   - Take me to [Resources](https://kodekloud.com/topic/resources-2/)

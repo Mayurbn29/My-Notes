@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Core Concepts Section Introduction
 
  - Take me to the [Video Tutorial](https://kodekloud.com/topic/core-concepts-section-introduction/)

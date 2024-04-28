@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Practice Test CKA Ingress 2
 
   - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-cka-ingress-networking-2/)

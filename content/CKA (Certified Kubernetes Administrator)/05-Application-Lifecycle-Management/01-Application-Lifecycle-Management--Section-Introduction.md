@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Application Lifecycle Management Section Introduction
   - Take me to [Video Tutorial](https://kodekloud.com/topic/application-lifecycle-management-section-introduction/)
   

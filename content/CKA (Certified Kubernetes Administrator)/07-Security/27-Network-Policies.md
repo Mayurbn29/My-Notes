@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Network Policies
   - Take me to [Video Tutorials](https://kodekloud.com/topic/network-policies-3/)
   

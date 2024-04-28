@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Provision VMs with Vagrant tool
 
   - Take me to [Lecture](https://kodekloud.com/topic/deploy-with-kubeadm-provision-vms-with-vagrant/)

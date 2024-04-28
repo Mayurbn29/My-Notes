@@ -1,3 +1,7 @@
+---
+created: 2024-04-28
+modified: 2024-04-28
+---
 ##### This guide describes the setup for configuring Cilium Cluster Mesh between 2 AKS clusters running with Cilium CNI.
 
 

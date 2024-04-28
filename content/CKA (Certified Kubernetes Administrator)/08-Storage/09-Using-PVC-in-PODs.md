@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Using PVC in PODs
 
   - Take me the [Lecture](https://kodekloud.com/topic/using-pvc-in-pods/)

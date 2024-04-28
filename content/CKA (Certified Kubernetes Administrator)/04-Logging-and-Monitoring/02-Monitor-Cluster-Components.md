@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Monitor Cluster Components
   - Take me to [Video Tutuorials](https://kodekloud.com/topic/monitor-cluster-components/)
   

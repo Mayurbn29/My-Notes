@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Cluster 3 - External Webserver
 
 NOTE: This question is also present in the Ultimate CKAD Mocks. The service name is `external-webserver-ckad01-svcn`, however the solution is exactly the same. If you are doing the CKAD version of this question, put instead `external-webserver-ckad01-svcn` everywhere you see `external-webserver-cka03-svcn`.

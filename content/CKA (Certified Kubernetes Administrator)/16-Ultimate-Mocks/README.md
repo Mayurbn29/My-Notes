@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # CKA Ultimate Mocks
 
 NOTE: CKA Ultimate Mocks is a separate course from the main CKA course, and as such requires a separate payment or is included in Pro subscription.

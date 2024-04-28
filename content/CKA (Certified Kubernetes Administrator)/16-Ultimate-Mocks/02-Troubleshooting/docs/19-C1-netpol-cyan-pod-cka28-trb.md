@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Cluster 1, NetPol, cyan-pod-cka28-trb
 
 For this question, please set the context to cluster1 by running:

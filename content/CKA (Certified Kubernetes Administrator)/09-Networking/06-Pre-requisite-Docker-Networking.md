@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Pre-requisite Docker Networking
 
   - Take me to [Lecture](https://kodekloud.com/topic/prerequsite-docker-networking/)

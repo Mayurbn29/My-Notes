@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Solution Troubleshoot Network
 
 Lets have a look at the [Practice Test](https://kodekloud.com/topic/practice-test-troubleshoot-network/) of the Troubleshoot Network

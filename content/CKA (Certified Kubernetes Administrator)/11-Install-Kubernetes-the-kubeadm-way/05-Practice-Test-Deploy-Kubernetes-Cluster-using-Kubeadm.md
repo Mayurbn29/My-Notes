@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Practice Test - Install kubernetes cluster using kubeadm tool
 
 If you want to build your own cluster, check these out:

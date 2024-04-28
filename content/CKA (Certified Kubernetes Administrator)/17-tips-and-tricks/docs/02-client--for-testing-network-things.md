@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Client for testing network things
 
 Often you will get questions that require you to test network polices, or look something up in the Kubernetes DNS. There is a one size fits all pod that you can deploy that has all the network testing tools you could possibly want, including

@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Cluster State Questions
 
 This comes up in both CKA and CKAD tests and is about questions that ask you to write for instance the pods consuming most CPU or most memory to a file, or some other kinds of question such as listing Pod IPs normally using jsonpath or custom columns. These questions are often marked incorrect at the end of the exam and cause much consternation amongst students.

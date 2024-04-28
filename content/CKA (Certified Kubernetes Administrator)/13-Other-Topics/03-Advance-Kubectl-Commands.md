@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Advance Kubectl Commands
 
   - Take me to the [Lecture](https://kodekloud.com/topic/advanced-kubectl-commands/)

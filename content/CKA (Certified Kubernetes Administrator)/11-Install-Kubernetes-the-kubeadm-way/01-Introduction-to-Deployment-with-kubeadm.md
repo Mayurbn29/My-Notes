@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Introduction - Kubeadm
 
 Note that this section is for your own practice only. To our knowledge there has never been an exam question that requires you to install a cluster. Questions asking you to _upgrade an existing cluster_ are not uncommon!

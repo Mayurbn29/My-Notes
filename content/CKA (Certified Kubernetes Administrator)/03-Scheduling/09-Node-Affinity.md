@@ -1,3 +1,7 @@
+---
+created: 2024-04-05
+modified: 2024-04-05
+---
 # Node Affinity
   - Take me to the [Video Tutorial](https://kodekloud.com/topic/node-affinity-2/)
   

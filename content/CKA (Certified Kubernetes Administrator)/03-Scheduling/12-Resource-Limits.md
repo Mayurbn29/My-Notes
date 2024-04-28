@@ -1,3 +1,7 @@
+---
+created: 2024-04-12
+modified: 2024-04-12
+---
 # Resource Limits
   - Take me to [Video Tutorials](https://kodekloud.com/topic/resource-limits/)
   
