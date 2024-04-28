@@ -1,3 +1,6 @@
+---
+modified: 2024-04-28T12:26:41+05:30
+---
 # Course Introduction
 
   - Take me to the [Video Tutorial](https://kodekloud.com/topic/course-introduction-5/)
