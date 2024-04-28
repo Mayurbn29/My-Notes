@@ -1,6 +1,6 @@
 ---
-created: 2024-04-05
-modified: 2024-04-05
+date: 2024-04-05
+last-modified: 2024-04-28
 ---
 # Multi-Container Pods Design Patterns
   - Take me to [Design Pattern page](https://kodekloud.com/topic/multi-container-pods-design-patterns/)

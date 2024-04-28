@@ -1,6 +1,6 @@
 ---
-created: 2024-04-05
-modified: 2024-04-05
+date: 2024-04-05
+last-modified: 2024-04-28
 ---
 # Node Affinity
   - Take me to the [Video Tutorial](https://kodekloud.com/topic/node-affinity-2/)

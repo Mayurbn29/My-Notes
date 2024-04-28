@@ -1,6 +1,6 @@
 ---
-created: 2024-04-23
-modified: 2024-04-23
+date: 2024-04-23
+last-modified: 2024-04-28
 ---
 # ETCD for Beginners
   - Take me to the [Video Tutorial](https://kodekloud.com/topic/etcd-for-beginners/)
