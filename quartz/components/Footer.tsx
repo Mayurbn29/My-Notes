@@ -13,7 +13,6 @@ export default ((opts?: Options) => {
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
-        <hr />
         <p>
         Created by <a href="https://github.com/Mayurbn29">{i18n(cfg.locale).components.footer.by}</a> with <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
         </p>
